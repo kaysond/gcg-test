@@ -1,0 +1,20 @@
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+schema: ./schema.ts
+require:
+  - ts-node/register
+documents: ./src/**/*.graphql
+generates:
+  src/types.gen.ts:
+    - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .gen.tsx
+      baseTypesPath: types.gen.ts
+    plugins:
+      - typescript-operations
+      - typed-document-node
+    config:
+      withHooks: true

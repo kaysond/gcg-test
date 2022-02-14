@@ -1,0 +1,12 @@
+{
+  "name": "@test/test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@test/client": "0.1.0",
+    "@test/server": "0.1.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

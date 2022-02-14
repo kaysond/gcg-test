@@ -1,0 +1,19 @@
+{
+  "name": "@test/client",
+  "version": "0.1.0",
+  "main": "index.tsx",
+  "dependencies": {
+    "@test/server": "0.1.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.1",
+    "@graphql-codegen/near-operation-file-preset": "^2.2.4",
+    "@graphql-codegen/typed-document-node": "^2.2.3",
+    "@graphql-codegen/typescript-operations": "^2.3.0",
+    "ts-node": "^10.5.0"
+  },
+  "scripts": {
+    "generate": "graphql-codegen",
+    "build": "tsc"
+  }
+}

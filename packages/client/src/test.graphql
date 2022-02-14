@@ -1,0 +1,6 @@
+query getstuff {
+  getAllJobs {
+    id
+    status
+  }
+}

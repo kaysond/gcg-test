@@ -1,0 +1,48 @@
+{
+  "folders": [
+    {
+      "name": "ROOT",
+      "path": "../"
+    },
+    {
+      "name": "server",
+      "path": "../packages/server"
+    },
+    {
+      "name": "client",
+      "path": "../packages/client"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules": true,
+      "packages": true,
+      "**/*.tsbuildinfo": true
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+    },
+    "eslint.packageManager": "npm",
+    "eslint.run": "onSave",
+    "eslint.format.enable": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": ["graphql"],
+    "prettier.requireConfig": true,
+    "npm.packageManager": "npm",
+    "files.eol": "\n"
+  },
+  "extensions": {
+    "recommendations": ["redhat.vscode-yaml"]
+  }
+}
